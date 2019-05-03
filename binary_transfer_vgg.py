@@ -54,7 +54,7 @@ model.compile(optimizer='rmsprop',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-model.Summary()
+model.summary()
 
 filepath = "binary-transfer-vgg-{epoch:02d}-loss{val_loss:.2f}.hdf5"
 checkpoint = keras.callbacks.ModelCheckpoint(
